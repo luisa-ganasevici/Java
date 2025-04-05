@@ -1,0 +1,32 @@
+public class AlunoPrincipal {
+    public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+            Aluno aluno = new Aluno();
+       System.out.println("digite o nome do aluno: ");
+       aluno.nome = ler.next() + ler.nextLine();
+
+
+        System.out.println("digite o rm do aluno: ");
+        aluno.rm = ler.next() + ler.nextLine();
+
+        System.out.println("digite a nota do cp1: ");
+        aluno.cp1 = ler.nextDouble();
+
+        System.out.println("digite a nota do cp2: ");
+        aluno.cp2 = ler.nextDouble();
+
+        System.out.println("digite a nota do cp3: ");
+        aluno.cp3 = ler.nextDouble();
+
+        System.out.println("digite a nota do challenge: ");
+        aluno.challenge = ler.nextDouble();
+
+        System.out.println("digite a nota do gs: ");
+        aluno.gs = ler.nextDouble();
+
+        System.out.println("*******************************************************************");
+
+
+        //chamar os metodos
+
+        double mediaSemestral = (aluno.calcularMediaCp() + aluno.challenge * 0.4) / 2 + aluno.gs * 0.6;
