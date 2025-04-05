@@ -1,0 +1,10 @@
+public class soma {
+    Scanner janta;
+    int n1;
+    int n2;
+    int res;
+
+    public soma() {
+        this.janta = new Scanner(System.in);
+    }
+}
