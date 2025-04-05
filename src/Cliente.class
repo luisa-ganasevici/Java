@@ -1,0 +1,15 @@
+public class Cliente {
+
+    String nome;
+    String id;
+    int idade;
+    String endereco;
+    String cep;
+    String cpf;
+    String tipoConta;
+
+    double saldo = 0;
+
+
+
+}
